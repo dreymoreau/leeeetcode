@@ -10,7 +10,7 @@
 // declare palin variable assigned to x and use toString() .split('') .reverse() .join('') methods
 // return directly to output a boolean if the number is a palindrome, meaning the same backwards as it is forwards
 // wrap palin using the Number() method to ensure the comparison is happening of 2 numbers
-var isPalindrome = function(x) {
+let isPalindrome = function(x) {
     let palin = x.toString().split('').reverse().join('')
     return Number(palin) === x
 };
