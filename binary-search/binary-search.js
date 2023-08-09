@@ -21,15 +21,14 @@ var search = function (nums, target) {
     // check if target is right at the mid point, return index
     if (nums[mid] == target) {
       return mid;
-      //the target is on right half of the mid point
-    } else if (nums[mid] < right) {
-      left = mid + 1;
       // the target is on the left half of the mid point
-    } else {
+    } else if (target < nums[mid]) {
       right = mid - 1;
+      //the target is on right half of the mid point
+    } else if (target > nums[mid]) {
+      left = mid + 1;
     }
   }
-
   // the target doesnt exist
   return -1;
 };
