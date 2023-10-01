@@ -2,9 +2,10 @@
  * @param {string} s
  * @return {string}
  */
-// declare reverse variable assigned to split('') reverse() join('')
-// return reverse using split(' ') .reverse() .join(' ')
+
+// declare rev variable and assign it to s and use split method at every letter, reverse and then join
+// return using rev variable but split at each word then use reverse and join back at every word
 var reverseWords = function (s) {
-  let reverse = s.split("").reverse().join("");
-  return reverse.split(" ").reverse().join(" ");
+  let rev = s.split("").reverse().join("");
+  return rev.split(" ").reverse().join(" ");
 };
